@@ -1,0 +1,7 @@
+a.sbui-typography-link {
+  @apply text-sm text-brand-7 dark:text-brand-7 cursor-pointer;
+}
+.sbui-typography {
+  @apply text-base;
+  @apply text-gray-4;
+}

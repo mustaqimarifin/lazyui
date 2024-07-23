@@ -1,0 +1,105 @@
+{
+  "name": "supalazy",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "UI components for Supabase Comments X",
+  "author": "Mustaqim Arifin <mustaqim.arifin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustaqimarifin/supalazy.git"
+  },
+  "keywords": ["postgres", "supalazy", "comments", "supabase", "tanstack", "react-query"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./typography": {
+      "types": "./dist/typography.d.ts",
+      "default": "./dist/typography.js"
+    },
+    "./modal": { "types": "./dist/components/Modal/index.d.ts", "default": "./dist/components/Modal/index.js" },
+    "./button": {
+      "types": "./dist/button.d.ts",
+      "default": "./dist/button.js"
+    },
+    "./altbutton": {
+      "types": "./dist/altbutton.d.ts",
+      "default": "./dist/altbutton.js"
+    },
+    "./space": {
+      "types": "./dist/space.d.ts",
+      "default": "./dist/space.js"
+    },
+    "./dropdown": {
+      "types": "./dist/dropdown.d.ts",
+      "default": "./dist/dropdown.js"
+    },
+    "./loading": {
+      "types": "./dist/loading.d.ts",
+      "default": "./dist/loading.js"
+    },
+    "./styles": { "default": "./dist/index.css" },
+    "./dist/*": "./dist/*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "vite build",
+    "build:t": "tsup-node",
+    "build-watch": "NODE_ENV=production rollup -c -w",
+    "typedoc:json": "typedoc --json spec/spec.json --mode modules --includeDeclarations --excludeExternals",
+    "lint": "eslint . --fix --cache --cache-location eslintcache",
+    "format": "bun prettier --write . --ignore-path .gitignore"
+  },
+  "peerDependencies": {
+    "@supabase/supabase-js": "2.44.4",
+    "lucide-react": "^0.414.0",
+    "postcss": "^8.4.39",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.2",
+    "@eslint-react/eslint-plugin": "^1.5.30",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
+    "copyfiles": "^2.4.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "9.7.0",
+    "eslint-plugin-format": "^0.1.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "fast-glob": "^3.3.2",
+    "lightningcss": "^1.25.1",
+    "rimraf": "^6.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.5.4",
+    "typescript-plugin-css-modules": "^5.1.0",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^4.0.0-beta.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vite-plugin-optimize-css-modules": "^1.1.0"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "release": { "branches": ["main"] },
+  "publishConfig": { "access": "public" },
+  "config": {
+    "commitizen": { "path": "./node_modules/cz-conventional-changelog" }
+  }
+}

@@ -1,0 +1,39 @@
+.sbui-icon-container {
+  @apply shrink-0 flex items-center justify-center rounded-full p-3;
+}
+
+.sbui-icon-container--brand {
+  @apply bg-brand-8/10  text-brand-8;
+}
+
+.sbui-icon-container--gray {
+  @apply bg-gray-6/10  text-gray-5;
+}
+
+.sbui-icon-container--red {
+  @apply bg-red-600/10  text-red-500;
+}
+
+.sbui-icon-container--yellow {
+  @apply bg-yellow-600/10  text-yellow-500;
+}
+
+.sbui-icon-container--green {
+  @apply bg-green-600/10  text-green-500;
+}
+
+.sbui-icon-container--blue {
+  @apply bg-blue-600/10  text-blue-500;
+}
+
+.sbui-icon-container--indigo {
+  @apply bg-indigo-600/10  text-indigo-500;
+}
+
+.sbui-icon-container--purple {
+  @apply bg-purple-600/10  text-purple-500;
+}
+
+.sbui-icon-container--pink {
+  @apply bg-pink-600/10  text-pink-500;
+}

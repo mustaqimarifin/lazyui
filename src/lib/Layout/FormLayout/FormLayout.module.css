@@ -1,0 +1,104 @@
+.scx-formlayout {
+  @apply grid gap-2;
+}
+
+.scx-formlayout--flex {
+  @apply flex justify-between;
+}
+
+.scx-formlayout--flex-right div:last-child {
+  text-align: right;
+}
+
+.scx-formlayout--flex-left div:first-child {
+  order: 2;
+}
+
+.scx-formlayout--flex-left div:last-child {
+  order: 1;
+}
+
+.scx-formlayout--non-responsive {
+  @apply grid grid-cols-12 gap-4;
+}
+
+.scx-formlayout--responsive {
+  @apply md:grid md:grid-cols-12 md:gap-4;
+}
+
+.scx-formlayout__label-container-horizontal {
+  @apply justify-between col-span-12;
+}
+
+.scx-formlayout__label-container-vertical {
+  @apply col-span-4;
+}
+
+.scx-formlayout__content-container-horizontal {
+  @apply col-span-12;
+}
+
+.scx-formlayout__content-container-vertical {
+  @apply col-span-8;
+}
+
+.scx-formlayout__content-container-vertical--align-right {
+  @apply text-right;
+}
+
+.scx-formlayout__label {
+  @apply block text-sm text-input-label-light dark:text-input-label-dark;
+}
+
+.scx-formlayout__label-opt,
+.scx-formlayout__label .scx-formlayout__label-before,
+.scx-formlayout__label .scx-formlayout__label-after {
+  @apply text-sm text-gray-4 dark:text-gray-3;
+}
+
+.scx-formlayout__error {
+  @apply mt-2 text-sm text-red-500;
+}
+
+.scx-formlayout__description {
+  @apply mt-2 text-sm text-gray-4 dark:text-gray-3;
+}
+
+/* .scx-formlayout__content-container--width-25 {
+  width:
+} */
+
+/*
+  Layout sizes
+*/
+
+.scx-formlayout--tiny .scx-formlayout__label,
+.scx-formlayout--tiny .scx-formlayout__label-opt,
+.scx-formlayout--tiny .scx-formlayout__error,
+.scx-formlayout--tiny .scx-formlayout__description {
+  @apply text-xs;
+}
+.scx-formlayout--small .scx-formlayout__label,
+.scx-formlayout--small .scx-formlayout__label-opt,
+.scx-formlayout--small .scx-formlayout__error,
+.scx-formlayout--small .scx-formlayout__description {
+  @apply text-sm leading-4;
+}
+.scx-formlayout--medium .scx-formlayout__label,
+.scx-formlayout--medium .scx-formlayout__label-opt,
+.scx-formlayout--medium .scx-formlayout__error,
+.scx-formlayout--medium .scx-formlayout__description {
+  @apply text-sm;
+}
+.scx-formlayout--large .scx-formlayout__label,
+.scx-formlayout--large .scx-formlayout__label-opt,
+.scx-formlayout--large .scx-formlayout__error,
+.scx-formlayout--large .scx-formlayout__description {
+  @apply text-base;
+}
+.scx-formlayout--xlarge .scx-formlayout__label,
+.scx-formlayout--xlarge .scx-formlayout__label-opt,
+.scx-formlayout--xlarge .scx-formlayout__error,
+.scx-formlayout--xlarge .scx-formlayout__description {
+  @apply text-base;
+}

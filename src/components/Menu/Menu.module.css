@@ -1,0 +1,35 @@
+.sbui-menu__item {
+  @apply px-4 py-2;
+  @apply cursor-pointer;
+  @apply hover:bg-gray-1 dark:hover:bg-dark-7 transition-colors duration-150;
+}
+
+.sbui-menu__group {
+  @apply px-4 py-2;
+}
+
+.sbui-menu__content {
+  @apply w-full;
+}
+
+.sbui-menu__item--active {
+  @apply bg-gray-1;
+  @apply dark:bg-gray-6;
+
+  @apply text-gray-9;
+  @apply dark:text-white;
+}
+
+.sbui-menu__item--active .sbui-menu__content {
+  @apply text-gray-6;
+  @apply dark:text-white;
+}
+
+.sbui-menu__item--active--bar {
+  @apply border-l-4 border-brand-5;
+  border-left-style: solid;
+}
+
+.sbui-menu__item--rounded {
+  @apply rounded;
+}

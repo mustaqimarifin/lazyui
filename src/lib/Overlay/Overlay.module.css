@@ -1,0 +1,75 @@
+/*
+ Overlay animations imported first as so placement styles are not affected.
+*/
+
+.scx-overlay--enter {
+  @apply transition ease-out duration-100;
+}
+.scx-overlay--enterFrom {
+  @apply transform opacity-0 scale-95;
+}
+.scx-overlay--enterTo {
+  @apply transform opacity-100 scale-100;
+}
+.scx-overlay--leave {
+  @apply transition ease-in duration-75;
+}
+.scx-overlay--leaveFrom {
+  @apply transform opacity-100 scale-100;
+}
+.scx-overlay--leaveTo {
+  @apply transform opacity-0 scale-95;
+}
+
+.scx-overlay {
+  @apply relative inline-block;
+}
+
+.scx-overlay-container {
+  @apply w-56;
+}
+
+.scx-overlay-container--bottomRight {
+  @apply absolute origin-top-right right-0 mt-2;
+}
+
+.scx-overlay-container--bottomLeft {
+  @apply absolute origin-top-left left-0 mt-2;
+}
+
+.scx-overlay-container--bottomCenter {
+  margin-top: 0.5rem;
+  position: absolute;
+  transform-origin: center;
+  transform-origin: bottom center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.scx-overlay-container--topRight {
+  @apply origin-bottom-right;
+  margin-top: -0.5rem;
+  position: absolute;
+  left: 0;
+  transform-origin: top left;
+  transform: translatey(-100%);
+}
+
+.scx-overlay-container--topLeft {
+  @apply origin-bottom-left;
+  margin-top: -0.5rem;
+  position: absolute;
+  right: 0;
+  transform-origin: top left;
+  transform: translatey(-100%);
+}
+
+.scx-overlay-container--topCenter {
+  @apply origin-bottom-left;
+  margin-top: -0.5rem;
+  position: absolute;
+  left: 50%;
+  transform-origin: top left;
+  transform: translatey(-100%) translateX(-50%);
+}
