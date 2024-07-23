@@ -1,7 +1,7 @@
 {
   "name": "supalazy",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "UI components for Supabase Comments X",
   "author": "Mustaqim Arifin <mustaqim.arifin@gmail.com>",
   "license": "MIT",

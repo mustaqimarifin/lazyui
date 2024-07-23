@@ -30,6 +30,8 @@ const external = [
   /@babel\/runtime/,
   ...Object.keys(pkg.devDependencies),
   ...Object.keys(pkg.peerDependencies),
+  'class-variance-authority',
+  './src',
 ]
 
 export default defineConfig({
