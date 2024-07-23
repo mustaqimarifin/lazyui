@@ -1,4 +1,3 @@
-/* eslint-disable ts/prefer-ts-expect-error */
 import SpaceStyles from './Space.module.css'
 
 function Space({

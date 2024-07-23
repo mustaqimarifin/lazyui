@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "target": "esnext",
+    "target": "ES2023",
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleDetection": "force",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "allowArbitraryExtensions": true,
     "strict": true,
@@ -18,9 +18,10 @@
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
   "include": ["src", "css.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

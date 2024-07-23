@@ -5,9 +5,9 @@ import React, { useEffect, useId, useRef, useState } from 'react'
 import type { Provider, SupabaseClient } from '@supabase/supabase-js'
 
 import { Input } from '../Input/index.js'
-import Checkbox from '../Checkbox/index.js'
 import {
   Button,
+  Checkbox,
   Space,
   Typography,
 } from './../../index.js'
