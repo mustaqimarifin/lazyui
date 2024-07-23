@@ -1,1 +1,1 @@
-export { default as AltButton } from './AltButton'
+export { default as AltButton } from './AltButton.js'

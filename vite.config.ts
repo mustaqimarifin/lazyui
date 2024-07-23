@@ -27,7 +27,6 @@ const input = Object.fromEntries(
 
 const external = [
   'react/jsx-runtime',
-  /@babel\/runtime/,
   ...Object.keys(pkg.devDependencies),
   ...Object.keys(pkg.peerDependencies),
   'class-variance-authority',

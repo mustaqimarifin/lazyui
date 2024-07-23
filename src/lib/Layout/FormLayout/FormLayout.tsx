@@ -1,4 +1,4 @@
-import Space from '../../../components/Space/Space'
+import Space from '../../../components/Space/Space.js'
 import FormLayoutStyles from './FormLayout.module.css'
 
 interface Props {

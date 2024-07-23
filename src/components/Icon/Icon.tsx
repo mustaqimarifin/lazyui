@@ -1,4 +1,4 @@
-import { IconContext } from './IconContext'
+import { IconContext } from './IconContext.js'
 
 import IconStyles from './Icon.module.css'
 

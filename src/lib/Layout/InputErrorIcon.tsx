@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { AlertTriangle } from '../../components/Auth/Icons'
+import { AlertTriangle } from '../../components/Auth/Icons.js'
 import InputErrorIconStyles from './InputErrorIcon.module.css'
 
 interface Props {

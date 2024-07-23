@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { cx } from 'class-variance-authority'
-import { X } from '../Auth/Icons'
+import { X } from '../Auth/Icons.js'
 
 const Dialog = DialogPrimitive.Root
 

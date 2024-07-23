@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Transition } from '@headlessui/react'
-import { DropdownContext } from './OverlayContext'
+import { DropdownContext } from './OverlayContext.js'
 import OverlayStyles from './Overlay.module.css'
-import useOnClickOutside from './useOnClickOutside'
+import useOnClickOutside from './useOnClickOutside.js'
 
 interface AnimationTailwindClasses {
   enter?: string

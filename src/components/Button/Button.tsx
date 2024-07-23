@@ -1,7 +1,7 @@
 import { forwardRef, useImperativeHandle, useMemo, useRef } from 'react'
 
-import { IconContext } from '../Icon/IconContext'
-import { Loader } from '../Auth/Icons'
+import { IconContext } from '../Icon/IconContext.js'
+import { Loader } from '../Auth/Icons.js'
 import ButtonStyles from './Button.module.css'
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {

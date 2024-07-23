@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react'
-import Title from './Title'
-import Text from './Text'
-import Link from './Link'
+import Title from './Title.js'
+import Text from './Text.js'
+import Link from './Link.js'
 
 export interface TypographyProps {
   children: ReactNode
