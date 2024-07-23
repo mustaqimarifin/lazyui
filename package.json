@@ -1,7 +1,7 @@
 {
   "name": "supalazy",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "UI components for Supabase Comments X",
   "author": "Mustaqim Arifin <mustaqim.arifin@gmail.com>",
   "license": "MIT",
@@ -9,9 +9,19 @@
     "type": "git",
     "url": "git+https://github.com/mustaqimarifin/supalazy.git"
   },
-  "keywords": ["postgres", "supalazy", "comments", "supabase", "tanstack", "react-query"],
+  "keywords": [
+    "postgres",
+    "supalazy",
+    "comments",
+    "supabase",
+    "tanstack",
+    "react-query"
+  ],
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
     "./typography": {
       "types": "./dist/components/Typography/index.d.ts",
       "default": "./dist/components/Typography/index.js"
@@ -40,7 +50,9 @@
       "types": "./dist/components/Dropdown/index.d.ts",
       "default": "./dist/components/Dropdown/index.js"
     },
-    "./styles": { "default": "./dist/index.css" },
+    "./styles": {
+      "default": "./dist/index.css"
+    },
     "./dist/*": "./dist/*"
   },
   "main": "./dist/index.js",
@@ -87,7 +99,6 @@
     "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.9",
-    "fast-glob": "^3.3.2",
     "lightningcss": "^1.25.1",
     "rimraf": "^6.0.1",
     "tailwindcss-animate": "^1.0.7",
@@ -99,9 +110,17 @@
     "vite-plugin-optimize-css-modules": "^1.1.0"
   },
   "browserslist": "> 0.25%, not dead",
-  "release": { "branches": ["main"] },
-  "publishConfig": { "access": "public" },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "config": {
-    "commitizen": { "path": "./node_modules/cz-conventional-changelog" }
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

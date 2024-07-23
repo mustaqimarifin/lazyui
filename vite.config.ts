@@ -5,7 +5,7 @@ import { optimizeCssModules as penis } from 'vite-plugin-optimize-css-modules'
 import { libInjectCss as css } from 'vite-plugin-lib-inject-css'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
-import fg from 'fast-glob'
+import glob from 'glob'
 import pkg from './package.json'
 
 console.log('Expected Externals', [
@@ -16,7 +16,7 @@ console.log('Expected Externals', [
 ])
 
 const input = Object.fromEntries(
-  fg.globSync('src/**/*.{ts,tsx}', {
+  glob.glob.sync('src/**/*.{ts,tsx}', {
     ignore: ['src/**/*.d.ts'],
   })
     .map(file => [
@@ -37,7 +37,7 @@ export default defineConfig({
   plugins: [penis(), css(), dts()],
   build: {
     lib: {
-      entry: {
+      /* entry: {
         index: 'src/index.tsx',
         altbutton: 'src/components/AltButton/index.tsx',
         button: 'src/components/Button/index.tsx',
@@ -50,8 +50,8 @@ export default defineConfig({
         dropdown: 'src/components/Dropdown/index.tsx',
         space: 'src/components/Space/index.tsx',
         loading: 'src/components/Loading/index.tsx',
-      },
-      // entry: ['src/index.tsx'],
+      }, */
+      entry: ['src/index.tsx'],
 
       /*  entry: [
         'src/index.ts',

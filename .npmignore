@@ -1,8 +1,5 @@
 src
 lib
-build
-dist
-out
 eslintcache
 .editorconfig
 .eslintrc.json
