@@ -1,7 +1,7 @@
 import React from 'react'
-import { DropdownContext } from '../../lib/Overlay/OverlayContext.js'
-import { Space } from '../Space/index.js'
-import Typography from '../Typography/index.js'
+import { DropdownContext } from '../../lib/Overlay/OverlayContext'
+import { Space } from '../Space/index'
+import Typography from '../Typography/index'
 
 import MenuStyles from './Menu.module.css'
 

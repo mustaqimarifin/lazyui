@@ -1,4 +1,4 @@
-import Typography from './Typography.js'
+import Typography from './Typography'
 
 export default Typography
-export { default as Typography, type TypographyProps } from './Typography.js'
+export { default as Typography, type TypographyProps } from './Typography'

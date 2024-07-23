@@ -30,7 +30,6 @@ const external = [
   /@babel\/runtime/,
   ...Object.keys(pkg.devDependencies),
   ...Object.keys(pkg.peerDependencies),
-  './src',
 ]
 
 export default defineConfig({

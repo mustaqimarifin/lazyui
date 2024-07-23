@@ -1,1 +1,1 @@
-export { default as Space } from './Space.js'
+export { default as Space } from './Space'

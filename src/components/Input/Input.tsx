@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-import { FormLayout } from '../../lib/Layout/FormLayout/FormLayout.js'
-import InputErrorIcon from '../../lib/Layout/InputErrorIcon.js'
-import InputIconContainer from '../../lib/Layout/InputIconContainer.js'
-import Typography from '../Typography/Typography.js'
-import { Button } from '../Button/index.js'
-import { Copy } from '../Auth/Icons.js'
-import { Space } from '../Space/index.js'
+import { FormLayout } from '../../lib/Layout/FormLayout/FormLayout'
+import InputErrorIcon from '../../lib/Layout/InputErrorIcon'
+import InputIconContainer from '../../lib/Layout/InputIconContainer'
+import Typography from '../Typography/Typography'
+import { Button } from '../Button/index'
+import { Copy } from '../Auth/Icons'
+import { Space } from '../Space/index'
 import InputStyles from './Input.module.css'
 
 export interface Props

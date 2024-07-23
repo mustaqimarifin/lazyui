@@ -1,1 +1,1 @@
-export { FormLayout } from './FormLayout.js'
+export { FormLayout } from './FormLayout'

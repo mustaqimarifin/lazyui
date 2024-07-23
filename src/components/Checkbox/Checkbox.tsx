@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
-import { FormLayout } from '../../lib/Layout/FormLayout/index.js'
-import { CheckboxContext } from './CheckboxContext.js'
+import { FormLayout } from '../../lib/Layout/FormLayout/index'
+import { CheckboxContext } from './CheckboxContext'
 import CheckboxStyles from './Checkbox.module.css'
 
 interface InputProps {

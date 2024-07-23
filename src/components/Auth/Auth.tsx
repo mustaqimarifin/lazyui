@@ -4,17 +4,17 @@
 import React, { useEffect, useId, useRef, useState } from 'react'
 import type { Provider, SupabaseClient } from '@supabase/supabase-js'
 
-import { Input } from '../Input/index.js'
+import { Input } from '../Input/index'
 import {
   Button,
   Checkbox,
   Space,
   Typography,
-} from './../../index.js'
-import { UserContextProvider, useUser } from './UserContext.js'
-import * as SocialIcons from './Icons.js'
+} from './../../index'
+import { UserContextProvider, useUser } from './UserContext'
+import * as SocialIcons from './Icons'
 import AuthStyles from './Auth.module.css'
-import { Inbox, Key, Lock, Mail } from './Icons.js'
+import { Inbox, Key, Lock, Mail } from './Icons'
 
 const VIEWS: ViewsMap = {
   SIGN_IN: 'sign_in',

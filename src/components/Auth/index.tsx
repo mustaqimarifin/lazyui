@@ -1,1 +1,1 @@
-export { default as Auth } from './Auth.js'
+export { default as Auth } from './Auth'

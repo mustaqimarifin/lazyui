@@ -1,5 +1,4 @@
-
-import { Loader } from '../Auth/Icons.js'
+import { Loader } from '../Auth/Icons'
 import LoadingStyles from './Loading.module.css'
 
 interface Props {
