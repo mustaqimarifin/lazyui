@@ -1,4 +1,4 @@
-# lazyUI
+# supalazy
 
 Before [shadcn](https://ui.shadcn.com/) stole your girl, there was [supabase/ui](https://github.com/supabase/ui) filled with neat, tailwind based components. This library merely steals from both to create a small collection for [supabase-comments-x](https://github.com/mustaqimarifin/supabase-comments-x)
 

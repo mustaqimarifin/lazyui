@@ -1,0 +1,26 @@
+{
+  "plugins": ["@babel/plugin-transform-runtime"],
+  "presets": [
+    ["@babel/preset-env", {"modules": false, "exclude": ["transform-typeof-symbol"]}],
+    ["@babel/preset-typescript", {"isTSX": true, "allExtensions": true}],
+    ["@babel/preset-react", {"runtime": "automatic"}]
+  ],
+  "assumptions": {
+    "arrayLikeIsIterable": true,
+    "constantReexports": true,
+    "ignoreFunctionLength": true,
+    "ignoreToPrimitiveHint": true,
+    "mutableTemplateObject": true,
+    "noClassCalls": true,
+    "noDocumentAll": true,
+    "objectRestNoSymbols": true,
+    "privateFieldsAsProperties": true,
+    "pureGetters": true,
+    "setClassMethods": true,
+    "setComputedProperties": true,
+    "setPublicClassFields": true,
+    "setSpreadProperties": true,
+    "skipForOfIteratorClosing": true,
+    "superIsCallableConstructor": true
+  }
+}
