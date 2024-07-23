@@ -53,7 +53,9 @@
     "build-watch": "NODE_ENV=production rollup -c -w",
     "typedoc:json": "typedoc --json spec/spec.json --mode modules --includeDeclarations --excludeExternals",
     "lint": "eslint . --fix --cache --cache-location eslintcache",
-    "format": "bun prettier --write . --ignore-path .gitignore"
+    "format": "bun prettier --write . --ignore-path .gitignore",
+    "ci:version": "changeset version",
+    "ci:release": "changeset publish"
   },
   "peerDependencies": {
     "@supabase/supabase-js": "2.44.4",
@@ -73,6 +75,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.2",
+    "@changesets/cli": "^2.27.7",
     "@eslint-react/eslint-plugin": "^1.5.30",
     "@types/node": "^20.14.11",
     "@types/react": "^18.3.3",
