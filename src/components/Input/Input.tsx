@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { Copy, Space } from 'lucide-react'
 
 import { FormLayout } from '../../lib/Layout/FormLayout/FormLayout.js'
 import InputErrorIcon from '../../lib/Layout/InputErrorIcon.js'
 import InputIconContainer from '../../lib/Layout/InputIconContainer.js'
 import Typography from '../Typography/Typography.js'
 import { Button } from '../Button/index.js'
+import { Copy } from '../Auth/Icons.js'
+import { Space } from '../Space/index.js'
 import InputStyles from './Input.module.css'
 
 export interface Props

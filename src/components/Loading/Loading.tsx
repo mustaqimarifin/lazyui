@@ -1,5 +1,5 @@
-import { Loader } from 'lucide-react'
 
+import { Loader } from '../Auth/Icons.js'
 import LoadingStyles from './Loading.module.css'
 
 interface Props {

@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { AlertCircle } from 'lucide-react'
+import { AlertTriangle } from '../../components/Auth/Icons.js'
 import InputErrorIconStyles from './InputErrorIcon.module.css'
 
 interface Props {
@@ -13,7 +13,7 @@ export default function InputErrorIcon({ style, size }: Props) {
       className={InputErrorIconStyles['scx-input-error-icon']}
       style={style}
     >
-      <AlertCircle size={size} strokeWidth={2} stroke="#f56565" />
+      <AlertTriangle size={size} strokeWidth={2} stroke="#f56565" />
     </div>
   )
 }

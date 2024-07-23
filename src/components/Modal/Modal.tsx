@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { Transition, TransitionChild } from '@headlessui/react'
-import { X } from 'lucide-react'
 import Typography from '../Typography/index.js'
 import { Space } from '../Space/index.js'
 import { Button } from '../Button/index.js'
+import { X } from '../Auth/Icons.js'
 import ModalStyles from './Modal.module.css'
 
 import { Dialog, DialogContent, DialogOverlay, DialogTrigger } from './Dialog.js'

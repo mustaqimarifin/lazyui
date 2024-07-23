@@ -3,12 +3,7 @@
 /* eslint-disable react/prefer-destructuring-assignment */
 import React, { useEffect, useId, useRef, useState } from 'react'
 import type { Provider, SupabaseClient } from '@supabase/supabase-js'
-import {
-  Inbox,
-  Key,
-  Lock,
-  Mail,
-} from 'lucide-react'
+
 import { Input } from '../Input/index.js'
 import Checkbox from '../Checkbox/index.js'
 import {
@@ -19,6 +14,7 @@ import {
 import { UserContextProvider, useUser } from './UserContext.js'
 import * as SocialIcons from './Icons.js'
 import AuthStyles from './Auth.module.css'
+import { Inbox, Key, Lock, Mail } from './Icons.js'
 
 const VIEWS: ViewsMap = {
   SIGN_IN: 'sign_in',
@@ -387,7 +383,7 @@ function EmailAuth({
             label="Email address"
             autoComplete="email"
             defaultValue={email}
-            icon={<Mail size={21} stroke="#666666" />}
+            icon={<Mail stroke="#666666" />}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setEmail(e.target.value)}
           />

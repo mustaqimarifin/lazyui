@@ -13,29 +13,32 @@
   "exports": {
     ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
     "./typography": {
-      "types": "./dist/typography.d.ts",
-      "default": "./dist/typography.js"
+      "types": "./dist/components/Typography/index.d.ts",
+      "default": "./dist/components/Typography/index.js"
     },
-    "./modal": { "types": "./dist/components/Modal/index.d.ts", "default": "./dist/components/Modal/index.js" },
+    "./modal": {
+      "types": "./dist/components/Modal/index.d.ts",
+      "default": "./dist/components/Modal/index.js"
+    },
     "./button": {
-      "types": "./dist/button.d.ts",
-      "default": "./dist/button.js"
+      "types": "./dist/components/Button/index.d.ts",
+      "default": "./dist/components/Button/index.js"
     },
     "./altbutton": {
-      "types": "./dist/altbutton.d.ts",
-      "default": "./dist/altbutton.js"
+      "types": "./dist/components/AltButton/index.d.ts",
+      "default": "./dist/components/AltButton/index.js"
     },
     "./space": {
-      "types": "./dist/space.d.ts",
-      "default": "./dist/space.js"
+      "types": "./dist/components/Space/index.d.ts",
+      "default": "./dist/components/Space/index.js"
+    },
+    "./menu": {
+      "types": "./dist/components/Menu/index.d.ts",
+      "default": "./dist/components/Menu/index.js"
     },
     "./dropdown": {
-      "types": "./dist/dropdown.d.ts",
-      "default": "./dist/dropdown.js"
-    },
-    "./loading": {
-      "types": "./dist/loading.d.ts",
-      "default": "./dist/loading.js"
+      "types": "./dist/components/Dropdown/index.d.ts",
+      "default": "./dist/components/Dropdown/index.js"
     },
     "./styles": { "default": "./dist/index.css" },
     "./dist/*": "./dist/*"
@@ -49,9 +52,6 @@
   "scripts": {
     "clean": "rimraf dist/",
     "build": "vite build",
-    "build:t": "tsup-node",
-    "build-watch": "NODE_ENV=production rollup -c -w",
-    "typedoc:json": "typedoc --json spec/spec.json --mode modules --includeDeclarations --excludeExternals",
     "lint": "eslint . --fix --cache --cache-location eslintcache",
     "format": "bun prettier --write . --ignore-path .gitignore",
     "ci:version": "changeset version",
@@ -59,7 +59,6 @@
   },
   "peerDependencies": {
     "@supabase/supabase-js": "2.44.4",
-    "lucide-react": "^0.414.0",
     "postcss": "^8.4.39",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

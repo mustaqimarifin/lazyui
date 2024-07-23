@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { AlertTriangle, Check, CircleX, Info, X } from 'lucide-react'
 
+import { AlertTriangle, Check, CircleX, Info, X } from '../Auth/Icons.js'
 import AlertStyles from './Alert.module.css'
 
 interface Props {

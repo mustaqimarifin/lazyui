@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import * as RadixDropdown from '@radix-ui/react-dropdown-menu'
-import { Check } from 'lucide-react'
+import { Check } from '../Auth/Icons.js'
 import DropdownStyles from './Dropdown.module.css'
 
 export interface RootProps {
