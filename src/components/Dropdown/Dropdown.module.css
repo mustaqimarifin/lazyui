@@ -1,4 +1,4 @@
-.sbui-dropdown-item {
+.scx-dropdown-item {
   @apply text-xs;
   @apply text-typography-body-light dark:text-typography-body-dark;
   @apply px-4 py-1.5 flex items-center space-x-2;
@@ -9,35 +9,35 @@
   user-select: none;
 }
 
-.sbui-dropdown-item svg {
+.scx-dropdown-item svg {
   @apply text-typography-body-secondary-light dark:text-typography-body-secondary-dark;
 }
 
-.sbui-dropdown-label {
+.scx-dropdown-label {
   @apply text-typography-body-secondary-light dark:text-typography-body-secondary-dark;
   @apply px-4 py-1.5 flex items-center space-x-2;
   font-size: 0.65rem;
 }
 
-.sbui-dropdown-misc {
+.scx-dropdown-misc {
   @apply px-4 py-1.5;
 }
 
-.sbui-dropdown-item:focus-visible {
+.scx-dropdown-item:focus-visible {
   border: none;
   outline: none;
 }
 
-.sbui-dropdown-input {
+.scx-dropdown-input {
   @apply flex items-center space-x-0 pl-8 pr-4;
 }
 
-.sbui-dropdown-input__check {
+.scx-dropdown-input__check {
   @apply absolute left-2;
   @apply flex items-center;
 }
 
-.sbui-dropdown__content {
+.scx-dropdown__content {
   @apply bg-bg-primary-light dark:bg-bg-secondary-dark p-0;
   @apply border border-lightmode dark:border-darkmode;
   @apply rounded;
@@ -68,29 +68,29 @@
   }
 }
 
-.sbui-dropdown__content {
+.scx-dropdown__content {
   transform-origin: 'var(--radix-dropdown-menu-content-transform-origin)';
 }
 
-.sbui-dropdown__content[data-state='open'] {
+.scx-dropdown__content[data-state='open'] {
   animation: fadeIn 50ms ease-out;
 }
 
-.sbui-dropdown__content[data-state='closed'] {
+.scx-dropdown__content[data-state='closed'] {
   animation: fadeOut 50ms ease-in;
 }
 
-.sbui-dropdown__trigger {
+.scx-dropdown__trigger {
   @apply border-none bg-transparent p-0 focus:ring-0;
 }
 
-.sbui-dropdown__arrow {
+.scx-dropdown__arrow {
   @apply fill-current text-bg-primary-light dark:text-bg-secondary-dark;
   @apply border-0 border-t;
   border-style: solid;
 }
 
-.sbui-dropdown-item-trigger {
+.scx-dropdown-item-trigger {
   @apply text-xs;
   @apply text-typography-body-light dark:text-typography-body-dark;
   @apply px-4 py-1.5 flex items-center space-x-2;
@@ -98,15 +98,15 @@
   cursor: 'default';
 }
 
-.sbui-dropdown-item-trigger svg {
+.scx-dropdown-item-trigger svg {
   @apply text-typography-body-secondary-light dark:text-typography-body-secondary-dark;
 }
 
-.sbui-dropdown-item-trigger:focus-visible {
+.scx-dropdown-item-trigger:focus-visible {
   border: none;
   outline: none;
 }
 
-.sbui-dropdown__trigger-item[data-state='open'] {
+.scx-dropdown__trigger-item[data-state='open'] {
   @apply bg-bg-secondary-light dark:bg-bg-primary-dark border-none;
 }

@@ -1,7 +1,7 @@
 {
   "name": "supalazy",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "UI components for Supabase Comments X",
   "author": "Mustaqim Arifin <mustaqim.arifin@gmail.com>",
   "license": "MIT",
@@ -64,6 +64,7 @@
   "scripts": {
     "clean": "rimraf dist/",
     "build": "bun clean && rollup -c",
+    "build:t": "tsup-node",
     "lint": "eslint . --fix --cache --cache-location eslintcache",
     "format": "bun prettier --write . --ignore-path .gitignore",
     "ci:version": "changeset version",
@@ -77,9 +78,9 @@
     "tailwindcss": "^3.4.6"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.2",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "1.1.0",
     "class-variance-authority": "^0.7.0"
   },
@@ -101,7 +102,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.14.11",
+    "@types/node": "^20.14.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",

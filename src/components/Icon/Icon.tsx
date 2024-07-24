@@ -85,7 +85,7 @@ function Icon({
         // confitional used for Icons with no color settings
         // default these icons to use 'currentColor' ie, the text color
         const noColor = !color && !fill && !stroke
-        const classes = ['sbui-icon', className]
+        const classes = ['scx-icon', className]
         if (contextClassName) {
           classes.push(contextClassName)
         }
@@ -107,8 +107,8 @@ function Icon({
         return background
           ? (
               <div
-                className={`${IconStyles['sbui-icon-container']} ${
-              IconStyles[`sbui-icon-container--${background}`]
+                className={`${IconStyles['scx-icon-container']} ${
+              IconStyles[`scx-icon-container--${background}`]
             }`}
               >
                 {Icon}

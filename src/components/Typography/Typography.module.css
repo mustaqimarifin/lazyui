@@ -1,15 +1,15 @@
 /* marker fix */
-.sbui-typography li::marker {
+.scx-typography li::marker {
   display: none;
   content: '';
 }
 
-.sbui-typography {
+.scx-typography {
   @apply text-base;
   @apply text-gray-4;
 }
 
-.sbui-typography code {
+.scx-typography code {
   padding: 0.2em 0.4em 0.1em;
   background: hsla(0, 0%, 58.8%, 0.1);
   border: 1px solid hsla(0, 0%, 39.2%, 0.2);
@@ -20,55 +20,55 @@
   default styles are handled by tailwind config
 */
 
-.dark .sbui-typography {
+.dark .scx-typography {
   @apply text-gray-2;
 }
 
-.dark .sbui-typography h1 {
+.dark .scx-typography h1 {
   @apply text-white;
 }
 
-.dark .sbui-typography h2 {
+.dark .scx-typography h2 {
   @apply text-white;
 }
 
-.dark .sbui-typography h3 {
+.dark .scx-typography h3 {
   @apply text-white;
 }
 
-.dark .sbui-typography h4 {
+.dark .scx-typography h4 {
   @apply text-white;
 }
 
-.dark .sbui-typography h5 {
+.dark .scx-typography h5 {
   @apply text-white;
 }
 
-.dark .sbui-typography strong {
+.dark .scx-typography strong {
   @apply text-white;
 }
 
-.dark .sbui-typography li::before {
+.dark .scx-typography li::before {
   @apply text-gray-3;
 }
 
-.dark .sbui-typography a {
+.dark .scx-typography a {
   @apply text-white;
 }
 
-.dark .sbui-typography blockquote {
+.dark .scx-typography blockquote {
   @apply text-white;
 }
 
-.dark .sbui-typography code {
+.dark .scx-typography code {
   color: white;
 }
 
-.dark .sbui-typography figcaption {
+.dark .scx-typography figcaption {
   @apply text-gray-6;
 }
 
-.dark .sbui-typography::selection {
+.dark .scx-typography::selection {
   /* @apply bg-brand-5; */
   background-color: '#6f7bb635';
 }

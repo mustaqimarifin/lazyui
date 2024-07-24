@@ -9,11 +9,11 @@ function Space({
   children,
 }: any) {
   const classes = []
-  classes.push(direction === 'vertical' ? 'sbui-space-col' : 'sbui-space-row')
+  classes.push(direction === 'vertical' ? 'scx-space-col' : 'scx-space-row')
   classes.push(
     // @ts-ignore
     SpaceStyles[
-      `sbui-${minus ? 'minus-' : ''}space-${
+      `scx-${minus ? 'minus-' : ''}space-${
         direction === 'vertical' ? 'y' : 'x'
       }-${size}`
     ],

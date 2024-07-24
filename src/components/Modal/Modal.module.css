@@ -113,7 +113,7 @@
   @apply text-yellow-500 bg-yellow-500 bg-opacity-20;
 }
 
-.sbui-modal-icon-container--success {
+.scx-modal-icon-container--success {
   @apply text-brand-5 bg-brand-5 bg-opacity-20;
 }
 

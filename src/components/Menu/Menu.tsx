@@ -1,5 +1,4 @@
-import React from 'react'
-import { DropdownContext } from '../../lib/Overlay/OverlayContext.js'
+import React, { createContext } from 'react'
 import { Space } from '../Space/index.js'
 import Typography from '../Typography/index.js'
 
@@ -10,6 +9,11 @@ interface MenuProps {
   className?: string
   style?: React.CSSProperties
 }
+
+export const DropdownContext = createContext({
+  onClick: (_e: any) => {},
+})
+
 function Menu({ children, className, style }: MenuProps) {
   return (
     <div
@@ -45,13 +49,13 @@ export function Item({
   showActiveBar = false,
   style,
 }: ItemProps) {
-  const classes = [MenuStyles['sbui-menu__item']]
+  const classes = [MenuStyles['scx-menu__item']]
   if (active)
-    classes.push(MenuStyles['sbui-menu__item--active'])
+    classes.push(MenuStyles['scx-menu__item--active'])
   if (active && showActiveBar)
-    classes.push(MenuStyles['sbui-menu__item--active--bar'])
+    classes.push(MenuStyles['scx-menu__item--active--bar'])
   if (rounded)
-    classes.push(MenuStyles['sbui-menu__item--rounded'])
+    classes.push(MenuStyles['scx-menu__item--rounded'])
 
   const itemOnClick = onClick
 
@@ -75,7 +79,7 @@ export function Item({
             <Typography.Text>
               <Space>
                 {icon && icon}
-                <span className={MenuStyles['sbui-menu__content']}>
+                <span className={MenuStyles['scx-menu__content']}>
                   {children}
                 </span>
               </Space>
@@ -95,7 +99,7 @@ interface GroupProps {
 
 export function Group({ children, icon, title }: GroupProps) {
   return (
-    <div className={MenuStyles['sbui-menu__group']}>
+    <div className={MenuStyles['scx-menu__group']}>
       <Space>
         {icon && icon}
         <Typography.Text type="secondary">{title}</Typography.Text>
@@ -113,7 +117,7 @@ export function Misc({ children }: MiscProps) {
   return (
     <div>
       <Typography.Text>
-        <span className={MenuStyles['sbui-menu__content']}>{children}</span>
+        <span className={MenuStyles['scx-menu__content']}>{children}</span>
       </Typography.Text>
     </div>
   )

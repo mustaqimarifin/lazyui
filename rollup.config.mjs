@@ -40,33 +40,6 @@ export default {
     loading: 'src/components/Loading/index.tsx',
   }, */
   input,
-  // input: 'src/index.ts',
-  /* input: [
-    'src/index.ts',
-    'src/components/Button/index.tsx',
-    'src/components/Typography/index.tsx',
-    'src/components/Icon/index.tsx',
-    'src/components/Image/index.tsx',
-    'src/components/Card/index.tsx',
-    'src/components/Badge/index.tsx',
-    'src/components/Alert/index.tsx',
-    'src/components/Accordion/index.tsx',
-    'src/components/Tabs/index.tsx',
-    'src/components/Menu/index.tsx',
-    'src/components/Modal/index.tsx',
-    'src/components/Popover/index.tsx',
-    'src/components/Dropdown/index.tsx',
-    'src/components/ContextMenu/index.tsx',
-    'src/components/Space/index.tsx',
-    'src/components/Loading/index.tsx',
-    'src/components/Divider/index.tsx',
-    'src/components/Select/index.tsx',
-    'src/components/Checkbox/index.tsx',
-    'src/components/Input/index.tsx',
-    'src/components/Radio/index.tsx',
-    'src/components/Toggle/index.tsx',
-    'src/components/Upload/index.tsx',
-  ], */
   external: [
     'react/jsx-runtime',
     /@babel\/runtime/,
@@ -89,8 +62,6 @@ export default {
     preset: 'smallest',
   },
   plugins: [
-
-    ts(),
     nodeResolve({
       extensions,
     }),
@@ -124,5 +95,7 @@ export default {
         '.js': 'jsx',
       },
     }),
+    ts(),
+
   ],
 }

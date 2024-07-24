@@ -31,14 +31,14 @@ function Alert({
   children,
 }: Props) {
   const [visible, setVisible] = useState(true)
-  const containerClasses = [AlertStyles['sbui-alert-container']]
-  containerClasses.push(AlertStyles[`sbui-alert-container--${variant}`])
+  const containerClasses = [AlertStyles['scx-alert-container']]
+  containerClasses.push(AlertStyles[`scx-alert-container--${variant}`])
   if (className)
     containerClasses.push(className)
-  const descriptionClasses = [AlertStyles['sbui-alert-description']]
-  descriptionClasses.push(AlertStyles[`sbui-alert-description--${variant}`])
-  const closeButtonClasses = [AlertStyles['sbui-close-button']]
-  closeButtonClasses.push(AlertStyles[`sbui-close-button--${variant}`])
+  const descriptionClasses = [AlertStyles['scx-alert-description']]
+  descriptionClasses.push(AlertStyles[`scx-alert-description--${variant}`])
+  const closeButtonClasses = [AlertStyles['scx-close-button']]
+  closeButtonClasses.push(AlertStyles[`scx-close-button--${variant}`])
 
   return (
     <>
@@ -47,7 +47,7 @@ function Alert({
           <div className="flex">
             <div className="shrink-0">{withIcon && icons[variant]}</div>
             <div className="ml-3">
-              <h3 className="sbui-alert-title">{title}</h3>
+              <h3 className="scx-alert-title">{title}</h3>
               <div className={descriptionClasses.join(' ')}>{children}</div>
             </div>
             {closable && (

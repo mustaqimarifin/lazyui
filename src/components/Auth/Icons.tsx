@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import type { RefAttributes, SVGProps } from 'react'
 
 const size = 21
@@ -405,4 +406,40 @@ export function Copy(props: LucideProps) {
       </path>
     </svg>
   )
+}
+
+export interface IconsProps {
+  provider: string
+}
+
+export function Icons({ provider }: IconsProps) {
+  if (provider == 'google')
+    return Google()
+  if (provider == 'twitter')
+    return Twitter()
+  if (provider == 'github')
+    return Github()
+  if (provider == 'discord')
+    return Discord()
+  if (provider == 'facebook')
+    return Facebook()
+  if (provider == 'apple')
+    return Apple()
+  if (provider == 'gitlab')
+    return Gitlab()
+  if (provider == 'bitbucket')
+    return Bitbucket()
+  if (provider == 'azure')
+    return Azure()
+  // if (provider == 'keycloak') return keycloak()
+  // if (provider == 'linkedin') return linkedin()
+  // if (provider == 'linkedin_oidc') return linkedin()
+  // if (provider == 'notion') return notion()
+  // if (provider == 'slack') return slack()
+  // if (provider == 'spotify') return spotify()
+  // if (provider == 'twitch') return twitch()
+  // if (provider == 'workos') return workos()
+  // if (provider == 'kakao') return kakao()
+
+  return null
 }

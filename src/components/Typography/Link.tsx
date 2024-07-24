@@ -18,8 +18,8 @@ function Link({
   style,
 }: Props) {
   const classes = [
-    LinkStyles['sbui-typography'],
-    LinkStyles['sbui-typography-link'],
+    LinkStyles['scx-typography'],
+    LinkStyles['scx-typography-link'],
   ]
   if (className) {
     classes.push(className)

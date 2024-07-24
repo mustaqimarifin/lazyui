@@ -70,15 +70,15 @@ function Input({
     type = 'text'
   }
 
-  const inputClasses = [InputStyles['sbui-input']]
+  const inputClasses = [InputStyles['scx-input']]
   if (error)
-    inputClasses.push(InputStyles['sbui-input--error'])
+    inputClasses.push(InputStyles['scx-input--error'])
   if (icon)
-    inputClasses.push(InputStyles['sbui-input--with-icon'])
+    inputClasses.push(InputStyles['scx-input--with-icon'])
   if (size)
-    inputClasses.push(InputStyles[`sbui-input--${size}`])
+    inputClasses.push(InputStyles[`scx-input--${size}`])
   if (borderless)
-    inputClasses.push(InputStyles['sbui-input--borderless'])
+    inputClasses.push(InputStyles['scx-input--borderless'])
 
   function onCopy(value: any) {
     navigator.clipboard.writeText(value).then(
@@ -116,7 +116,7 @@ function Input({
         style={style}
         size={size}
       >
-        <div className={InputStyles['sbui-input-container']}>
+        <div className={InputStyles['scx-input-container']}>
           <input
             autoComplete={autoComplete}
             autoFocus={autoFocus}
@@ -139,7 +139,7 @@ function Input({
           {copy || error || actions
             ? (
                 <Space
-                  className={InputStyles['sbui-input-actions-container']}
+                  className={InputStyles['scx-input-actions-container']}
                   size={1}
                 >
                   {error && <InputErrorIcon size={size} />}
@@ -229,15 +229,15 @@ function TextArea({
 }: TextAreaProps) {
   const [charLength, setCharLength] = useState(0)
 
-  const classes = [InputStyles['sbui-input']]
+  const classes = [InputStyles['scx-input']]
   if (error)
-    classes.push(InputStyles['sbui-input--error'])
+    classes.push(InputStyles['scx-input--error'])
   if (icon)
-    classes.push(InputStyles['sbui-input--with-icon'])
+    classes.push(InputStyles['scx-input--with-icon'])
   if (size)
-    classes.push(InputStyles[`sbui-input--${size}`])
+    classes.push(InputStyles[`scx-input--${size}`])
   if (borderless)
-    classes.push(InputStyles['sbui-input--borderless'])
+    classes.push(InputStyles['scx-input--borderless'])
 
   function onInputChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
     setCharLength(e.target.value.length)

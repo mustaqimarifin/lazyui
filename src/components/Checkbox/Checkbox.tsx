@@ -141,11 +141,11 @@ export function Checkbox({
         const active = checked ?? undefined
 
         const containerClasses = [
-          CheckboxStyles['sbui-checkbox-container'],
+          CheckboxStyles['scx-checkbox-container'],
 
         ]
         if (sizing) {
-          containerClasses.push(CheckboxStyles[`sbui-checkbox-container--${sizing}`])
+          containerClasses.push(CheckboxStyles[`scx-checkbox-container--${sizing}`])
         }
         if (className)
           containerClasses.push(className)
@@ -165,7 +165,7 @@ export function Checkbox({
               id={markupId}
               name={markupName}
               type="checkbox"
-              className={CheckboxStyles['sbui-checkbox']}
+              className={CheckboxStyles['scx-checkbox']}
               onChange={onInputChange}
               onFocus={onFocus ? event => onFocus(event) : undefined}
               onBlur={onBlur ? event => onBlur(event) : undefined}
@@ -174,24 +174,24 @@ export function Checkbox({
               disabled={disabled}
               {...props}
             />
-            <div className={CheckboxStyles['sbui-checkbox__label-container']}>
+            <div className={CheckboxStyles['scx-checkbox__label-container']}>
               <label
                 className={
-                  CheckboxStyles['sbui-checkbox__label-container__label']
+                  CheckboxStyles['scx-checkbox__label-container__label']
                 }
                 htmlFor={markupId}
               >
                 <span
                   className={
                     CheckboxStyles[
-                      'sbui-checkbox__label-container__label__span'
+                      'scx-checkbox__label-container__label__span'
                     ]
                   }
                 >
                   {beforeLabel && (
                     <span
                       className={
-                        CheckboxStyles['sbui-checkbox__label-text-before']
+                        CheckboxStyles['scx-checkbox__label-text-before']
                       }
                     >
                       {beforeLabel}
@@ -201,7 +201,7 @@ export function Checkbox({
                   {afterLabel && (
                     <span
                       className={
-                        CheckboxStyles['sbui-checkbox__label-text-after']
+                        CheckboxStyles['scx-checkbox__label-text-after']
                       }
                     >
                       {afterLabel}
@@ -212,7 +212,7 @@ export function Checkbox({
                 {description && (
                   <p
                     className={
-                      CheckboxStyles['sbui-checkbox__label-container__label__p']
+                      CheckboxStyles['scx-checkbox__label-container__label__p']
                     }
                   >
                     {description}

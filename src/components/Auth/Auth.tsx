@@ -12,9 +12,8 @@ import {
   Typography,
 } from './../../index.js'
 import { UserContextProvider, useUser } from './UserContext.js'
-import * as SocialIcons from './Icons.js'
 import AuthStyles from './Auth.module.css'
-import { Inbox, Key, Lock, Mail } from './Icons.js'
+import { Icons, Inbox, Key, Lock, Mail } from './Icons.js'
 
 const VIEWS: ViewsMap = {
   SIGN_IN: 'sign_in',
@@ -78,7 +77,7 @@ function Auth({
 
   const verticalSocialLayout = socialLayout === 'vertical'
 
-  const containerClasses = [AuthStyles['sbui-auth']]
+  const containerClasses = [AuthStyles['scx-auth']]
   if (className) {
     containerClasses.push(className)
   }
@@ -173,42 +172,42 @@ function SocialAuth({
 
 }: AuthProps) {
   const buttonStyles: any = {
-    azure: {
+    Azure: {
       backgroundColor: '#008AD7',
       color: 'white',
     },
-    bitbucket: {
+    Bitbucket: {
       backgroundColor: '#205081',
       color: 'white',
     },
-    facebook: {
+    Facebook: {
       backgroundColor: '#4267B2',
       color: 'white',
     },
-    github: {
+    Github: {
       backgroundColor: '#333',
       color: 'white',
     },
-    gitlab: {
+    Gitlab: {
       backgroundColor: '#FC6D27',
     },
-    google: {
+    Google: {
       backgroundColor: '#ce4430',
       color: 'white',
     },
-    twitter: {
+    Twitter: {
       backgroundColor: '#1DA1F2',
       color: 'white',
     },
-    apple: {
+    Apple: {
       backgroundColor: '#000',
       color: 'white',
     },
-    discord: {
+    Discord: {
       backgroundColor: '#404fec',
       color: 'white',
     },
-    twitch: {
+    Twitch: {
       backgroundColor: '#9146ff',
       color: 'white',
     },
@@ -235,16 +234,9 @@ function SocialAuth({
     <Space size={8} direction="vertical">
       {providers && providers.length > 0 && (
         <Space size={4} direction="vertical">
-          <Typography.Text
-            type="secondary"
-            className={AuthStyles['sbui-auth-label']}
-          >
-            Sign in with
-          </Typography.Text>
+
           <Space size={2} direction={socialLayout}>
             {providers.map((provider) => {
-              // @ts-expect-error
-              const AuthIcon = SocialIcons[provider]
               return (
                 <div
                   key={provider}
@@ -256,12 +248,12 @@ function SocialAuth({
                     shadow
                     size={socialButtonSize}
                     style={socialColors ? buttonStyles[provider] : {}}
-                    icon={AuthIcon ? <AuthIcon /> : ''}
+                    icon={<Icons provider={provider} />}
                     loading={loading}
                     onClick={() => handleProviderSignIn(provider)}
                     className="flex items-center"
                   >
-                    {verticalSocialLayout && `Sign up with ${provider}`}
+                    {verticalSocialLayout }
                   </Button>
                 </div>
               )

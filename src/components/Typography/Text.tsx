@@ -29,28 +29,28 @@ function Text({
   strong,
   small,
 }: Props) {
-  const classes = [TextStyles['sbui-typography-text']]
+  const classes = [TextStyles['scx-typography-text']]
   if (className) {
     classes.push(className)
   }
   if (type) {
-    classes.push(TextStyles[`sbui-typography-text--${type}`])
+    classes.push(TextStyles[`scx-typography-text--${type}`])
   }
 
   if (disabled) {
-    classes.push(TextStyles[`sbui-typography-text-disabled`])
+    classes.push(TextStyles[`scx-typography-text-disabled`])
   }
 
   if (underline) {
-    classes.push(TextStyles[`sbui-typography-text-underline`])
+    classes.push(TextStyles[`scx-typography-text-underline`])
   }
 
   if (strikethrough) {
-    classes.push(TextStyles[`sbui-typography-text-strikethrough`])
+    classes.push(TextStyles[`scx-typography-text-strikethrough`])
   }
 
   if (small) {
-    classes.push(TextStyles['sbui-typography-text-small'])
+    classes.push(TextStyles['scx-typography-text-small'])
   }
 
   if (code) {

@@ -7,16 +7,16 @@ interface Props {
   active: boolean
 }
 export default function Loading({ children, active }: Props) {
-  const classNames = [LoadingStyles['sbui-loading']]
+  const classNames = [LoadingStyles['scx-loading']]
   if (active) {
-    classNames.push(LoadingStyles['sbui-loading--active'])
+    classNames.push(LoadingStyles['scx-loading--active'])
   }
 
   return (
     <div className={classNames.join(' ')}>
-      <div className={LoadingStyles['sbui-loading-content']}>{children}</div>
+      <div className={LoadingStyles['scx-loading-content']}>{children}</div>
       {active && (
-        <Loader size={24} className={LoadingStyles['sbui-loading-spinner']} />
+        <Loader size={24} className={LoadingStyles['scx-loading-spinner']} />
       )}
     </div>
   )

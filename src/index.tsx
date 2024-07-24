@@ -2,6 +2,8 @@
 //import './index.css'
 
 export * from './components/Auth/index.js'
+export * from './components/Label/index.js'
+
 export * from './components/AltButton/index.js'
 export * from './components/Button/index.js'
 export * from './components/Typography/index.js'
